@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "./print.h"
 
 int main()
 {
-	printf("hello");
+	print_hello();
 }
