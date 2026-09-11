@@ -1,0 +1,11 @@
+# build output
+hello
+*.o
+*.d
+
+# sourcetrail index (regenerate by re-indexing the project)
+*.srctrldb
+*.srctrlbm
+
+# scratch
+tmp.txt
