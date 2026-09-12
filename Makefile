@@ -31,12 +31,18 @@ compile_commands.json: $(SRCS) Makefile
 	@printf '\n]\n' >> $@
 	@echo "wrote $@ with $(words $(SRCS)) entries"
 
+# Regenerate the module-graph diagram (TypeScript, run directly by node >= 22).
+diagram: docs/architecture.svg
+
+docs/architecture.svg: tools/arch-diagram.ts $(SRCS) $(wildcard *.h) $(wildcard src/*/*.h)
+	node tools/arch-diagram.ts $@
+
 clean:
 	rm -f $(TARGET) $(OBJS) $(DEPS)
 
 distclean: clean
 	rm -f compile_commands.json
 
-.PHONY: all run compdb clean distclean
+.PHONY: all run compdb diagram clean distclean
 
 -include $(DEPS)

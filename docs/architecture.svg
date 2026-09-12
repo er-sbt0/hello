@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1396" height="1216" viewBox="0 0 1396 1216" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif">
+<style>
+	.bg { fill: #fbfbfd; }
+	.lane { fill: #f1f2f6; }
+	.lane-label { font-size: 11px; font-weight: 650; letter-spacing: .08em; }
+	.title { font-size: 20px; font-weight: 650; fill: #16181d; }
+	.sub { font-size: 12px; fill: #646b78; }
+	.name { font-size: 13.5px; font-weight: 600; fill: #16181d; }
+	.meta { font-size: 10.5px; fill: #646b78; }
+	.box { fill: #ffffff; stroke: #d7dae1; stroke-width: 1; }
+	.edge { fill: none; stroke-width: 1.3; opacity: .42; }
+	.edge.api { stroke-width: 1.7; opacity: .62; }
+	.edge.impl { stroke-dasharray: 3 4; }
+	.edge.cyclic { stroke: #e0303c; stroke-width: 2; opacity: .9; stroke-dasharray: 6 3; }
+	.tick { font-size: 10px; fill: #9aa1ad; }
+	.f-util { fill: hsl(36 64% 42%); }
+	.s-util { stroke: hsl(36 64% 42%); }
+	.f-ds { fill: hsl(158 64% 42%); }
+	.s-ds { stroke: hsl(158 64% 42%); }
+	.f-core { fill: hsl(212 64% 42%); }
+	.s-core { stroke: hsl(212 64% 42%); }
+	.f-app { fill: hsl(292 64% 42%); }
+	.s-app { stroke: hsl(292 64% 42%); }
+	.f-root { fill: hsl(350 64% 42%); }
+	.s-root { stroke: hsl(350 64% 42%); }
+	@media (prefers-color-scheme: dark) {
+		.bg { fill: #14161a; }
+		.lane { fill: #1a1d23; }
+		.title, .name { fill: #eef0f4; }
+		.sub, .meta { fill: #99a1ae; }
+		.box { fill: #1f2228; stroke: #333942; }
+		.tick { fill: #6d7683; }
+		.f-util { fill: hsl(36 70% 64%); }
+		.s-util { stroke: hsl(36 70% 64%); }
+		.f-ds { fill: hsl(158 70% 64%); }
+		.s-ds { stroke: hsl(158 70% 64%); }
+		.f-core { fill: hsl(212 70% 64%); }
+		.s-core { stroke: hsl(212 70% 64%); }
+		.f-app { fill: hsl(292 70% 64%); }
+		.s-app { stroke: hsl(292 70% 64%); }
+		.f-root { fill: hsl(350 70% 64%); }
+		.s-root { stroke: hsl(350 70% 64%); }
+	}
+</style>
+<rect class="bg" width="1396" height="1216"/>
+<text class="title" x="34" y="40">hello — module graph</text>
+<text class="sub" x="34" y="61">29 files · 2,904 lines · 170 public functions · 61 include edges</text>
+<text class="sub" x="34" y="79">lanes are source directories · a module sits above everything it includes · solid = header dependency, dashed = implementation only · red = include cycle</text>
+<rect class="lane" x="34" y="88" width="206" height="1112" rx="12"/>
+<text class="lane-label f-util" x="137" y="106" text-anchor="middle">UTIL</text>
+<rect class="lane" x="264" y="88" width="408" height="1112" rx="12"/>
+<text class="lane-label f-ds" x="468" y="106" text-anchor="middle">DS</text>
+<rect class="lane" x="696" y="88" width="206" height="1112" rx="12"/>
+<text class="lane-label f-core" x="799" y="106" text-anchor="middle">CORE</text>
+<rect class="lane" x="926" y="88" width="206" height="1112" rx="12"/>
+<text class="lane-label f-app" x="1029" y="106" text-anchor="middle">APP</text>
+<rect class="lane" x="1156" y="88" width="206" height="1112" rx="12"/>
+<text class="lane-label f-root" x="1259" y="106" text-anchor="middle">ENTRY / IO</text>
+<text class="tick" x="1384" y="1146" text-anchor="end">leaf</text>
+<text class="tick" x="1384" y="1036" text-anchor="end">1</text>
+<text class="tick" x="1384" y="926" text-anchor="end">2</text>
+<text class="tick" x="1384" y="816" text-anchor="end">3</text>
+<text class="tick" x="1384" y="706" text-anchor="end">4</text>
+<text class="tick" x="1384" y="596" text-anchor="end">5</text>
+<text class="tick" x="1384" y="486" text-anchor="end">6</text>
+<text class="tick" x="1384" y="376" text-anchor="end">7</text>
+<text class="tick" x="1384" y="266" text-anchor="end">8</text>
+<text class="tick" x="1384" y="156" text-anchor="end">9</text>
+<path class="edge impl s-root" d="M 1271.8 182 C 1271.8 210.0, 1067.3 204.0, 1067.3 232"/>
+<path class="edge impl s-root" d="M 1259.0 182 C 1259.0 427.0, 1259.0 427.0, 1259.0 672"/>
+<path class="edge impl s-root" d="M 1276.3 182 C 1276.3 647.0, 189.0 647.0, 189.0 1112"/>
+<path class="edge impl s-root" d="M 1276.3 732 C 1276.3 867.0, 189.0 867.0, 189.0 1002"/>
+<path class="edge impl s-root" d="M 1276.3 732 C 1276.3 760.0, 189.0 754.0, 189.0 782"/>
+<path class="edge impl s-app" d="M 1029.0 292 C 1029.0 320.0, 1029.0 314.0, 1029.0 342"/>
+<path class="edge impl s-app" d="M 1016.2 292 C 1016.2 482.0, 1220.7 482.0, 1220.7 672"/>
+<path class="edge impl s-app" d="M 1046.3 292 C 1046.3 702.0, 189.0 702.0, 189.0 1112"/>
+<path class="edge impl s-app" d="M 1046.3 292 C 1046.3 647.0, 189.0 647.0, 189.0 1002"/>
+<path class="edge impl s-app" d="M 1046.3 292 C 1046.3 537.0, 189.0 537.0, 189.0 782"/>
+<path class="edge api s-app" d="M 1029.0 292 C 1029.0 427.0, 1029.0 427.0, 1029.0 562"/>
+<path class="edge api s-app" d="M 1041.8 292 C 1041.8 427.0, 837.3 427.0, 837.3 562"/>
+<path class="edge api s-app" d="M 1041.8 292 C 1041.8 537.0, 837.3 537.0, 837.3 782"/>
+<path class="edge api s-app" d="M 1041.8 292 C 1041.8 372.0, 837.3 372.0, 837.3 452"/>
+<path class="edge cyclic s-app" d="M 1029.0 402 C 1029.0 430.0, 1029.0 204.0, 1029.0 232"/>
+<path class="edge impl s-app" d="M 1029.0 402 C 1029.0 482.0, 1029.0 482.0, 1029.0 562"/>
+<path class="edge impl s-app" d="M 1046.3 402 C 1046.3 537.0, 520.0 537.0, 520.0 672"/>
+<path class="edge impl s-app" d="M 1046.3 402 C 1046.3 647.0, 621.0 647.0, 621.0 892"/>
+<path class="edge impl s-app" d="M 1016.2 402 C 1016.2 537.0, 1220.7 537.0, 1220.7 672"/>
+<path class="edge impl s-app" d="M 1046.3 402 C 1046.3 757.0, 189.0 757.0, 189.0 1112"/>
+<path class="edge impl s-app" d="M 1046.3 402 C 1046.3 702.0, 189.0 702.0, 189.0 1002"/>
+<path class="edge impl s-app" d="M 1046.3 402 C 1046.3 592.0, 189.0 592.0, 189.0 782"/>
+<path class="edge api s-app" d="M 1041.8 402 C 1041.8 430.0, 837.3 424.0, 837.3 452"/>
+<path class="edge api s-app" d="M 1041.8 402 C 1041.8 537.0, 837.3 537.0, 837.3 672"/>
+<path class="edge impl s-app" d="M 1046.3 622 C 1046.3 757.0, 621.0 757.0, 621.0 892"/>
+<path class="edge impl s-app" d="M 1016.2 622 C 1016.2 650.0, 1220.7 644.0, 1220.7 672"/>
+<path class="edge impl s-app" d="M 1046.3 622 C 1046.3 867.0, 189.0 867.0, 189.0 1112"/>
+<path class="edge impl s-app" d="M 1046.3 622 C 1046.3 812.0, 189.0 812.0, 189.0 1002"/>
+<path class="edge impl s-app" d="M 1046.3 622 C 1046.3 702.0, 189.0 702.0, 189.0 782"/>
+<path class="edge impl s-core" d="M 816.3 622 C 816.3 650.0, 520.0 644.0, 520.0 672"/>
+<path class="edge impl s-core" d="M 816.3 622 C 816.3 867.0, 189.0 867.0, 189.0 1112"/>
+<path class="edge impl s-core" d="M 816.3 622 C 816.3 812.0, 189.0 812.0, 189.0 1002"/>
+<path class="edge impl s-core" d="M 816.3 622 C 816.3 702.0, 189.0 702.0, 189.0 782"/>
+<path class="edge api s-core" d="M 811.8 622 C 811.8 757.0, 607.3 757.0, 607.3 892"/>
+<path class="edge impl s-core" d="M 811.8 842 C 811.8 870.0, 607.3 864.0, 607.3 892"/>
+<path class="edge impl s-core" d="M 816.3 842 C 816.3 977.0, 189.0 977.0, 189.0 1112"/>
+<path class="edge impl s-core" d="M 816.3 842 C 816.3 922.0, 189.0 922.0, 189.0 1002"/>
+<path class="edge impl s-core" d="M 816.3 512 C 816.3 702.0, 419.0 702.0, 419.0 892"/>
+<path class="edge impl s-core" d="M 811.8 512 C 811.8 702.0, 607.3 702.0, 607.3 892"/>
+<path class="edge impl s-core" d="M 816.3 512 C 816.3 812.0, 189.0 812.0, 189.0 1112"/>
+<path class="edge impl s-core" d="M 816.3 512 C 816.3 757.0, 189.0 757.0, 189.0 1002"/>
+<path class="edge impl s-core" d="M 816.3 512 C 816.3 647.0, 189.0 647.0, 189.0 782"/>
+<path class="edge api s-core" d="M 799.0 512 C 799.0 540.0, 799.0 534.0, 799.0 562"/>
+<path class="edge api s-core" d="M 799.0 512 C 799.0 647.0, 799.0 647.0, 799.0 782"/>
+<path class="edge api s-core" d="M 799.0 512 C 799.0 592.0, 799.0 592.0, 799.0 672"/>
+<path class="edge impl s-core" d="M 816.3 732 C 816.3 922.0, 189.0 922.0, 189.0 1112"/>
+<path class="edge impl s-core" d="M 816.3 732 C 816.3 867.0, 189.0 867.0, 189.0 1002"/>
+<path class="edge impl s-core" d="M 816.3 732 C 816.3 760.0, 189.0 754.0, 189.0 782"/>
+<path class="edge impl s-ds" d="M 379.8 952 C 379.8 1032.0, 175.3 1032.0, 175.3 1112"/>
+<path class="edge impl s-ds" d="M 379.8 952 C 379.8 980.0, 175.3 974.0, 175.3 1002"/>
+<path class="edge impl s-ds" d="M 473.6 732 C 473.6 812.0, 383.8 812.0, 383.8 892"/>
+<path class="edge impl s-ds" d="M 485.3 732 C 485.3 922.0, 189.0 922.0, 189.0 1112"/>
+<path class="edge impl s-ds" d="M 485.3 732 C 485.3 867.0, 189.0 867.0, 189.0 1002"/>
+<path class="edge impl s-ds" d="M 485.3 732 C 485.3 760.0, 189.0 754.0, 189.0 782"/>
+<path class="edge api s-ds" d="M 462.4 732 C 462.4 812.0, 552.2 812.0, 552.2 892"/>
+<path class="edge impl s-ds" d="M 586.3 952 C 586.3 1032.0, 189.0 1032.0, 189.0 1112"/>
+<path class="edge impl s-ds" d="M 586.3 952 C 586.3 980.0, 189.0 974.0, 189.0 1002"/>
+<path class="edge impl s-util" d="M 137.0 1062 C 137.0 1090.0, 137.0 1084.0, 137.0 1112"/>
+<path class="edge impl s-util" d="M 137.0 842 C 137.0 977.0, 137.0 977.0, 137.0 1112"/>
+<path class="edge impl s-util" d="M 137.0 842 C 137.0 922.0, 137.0 922.0, 137.0 1002"/>
+<path class="edge api s-util" d="M 119.7 842 C 119.7 870.0, 517.0 864.0, 517.0 892"/>
+<g><title>main.c</title>
+<rect class="box" x="1170" y="122" width="178" height="60" rx="9"/>
+<rect class="f-root" x="1170" y="122" width="4" height="60" rx="2"/>
+<text class="name" x="1186" y="147">main</text>
+<text class="meta" x="1186" y="165">1 fn · 27 loc · 3 in · 0 out</text>
+</g>
+<g><title>print.c, print.h</title>
+<rect class="box" x="1170" y="672" width="178" height="60" rx="9"/>
+<rect class="f-root" x="1170" y="672" width="4" height="60" rx="2"/>
+<text class="name" x="1186" y="697">print</text>
+<text class="meta" x="1186" y="715">10 fn · 101 loc · 2 in · 4 out</text>
+</g>
+<g><title>src/app/app.c, src/app/app.h</title>
+<rect class="box" x="940" y="232" width="178" height="60" rx="9"/>
+<rect class="f-app" x="940" y="232" width="4" height="60" rx="2"/>
+<text class="name" x="956" y="257">app</text>
+<text class="meta" x="956" y="275">5 fn · 198 loc · 9 in · 2 out</text>
+</g>
+<g><title>src/app/commands.c, src/app/commands.h</title>
+<rect class="box" x="940" y="342" width="178" height="60" rx="9"/>
+<rect class="f-app" x="940" y="342" width="4" height="60" rx="2"/>
+<text class="name" x="956" y="367">commands</text>
+<text class="meta" x="956" y="385">15 fn · 295 loc · 10 in · 1 out</text>
+</g>
+<g><title>src/app/report.c, src/app/report.h</title>
+<rect class="box" x="940" y="562" width="178" height="60" rx="9"/>
+<rect class="f-app" x="940" y="562" width="4" height="60" rx="2"/>
+<text class="name" x="956" y="587">report</text>
+<text class="meta" x="956" y="605">10 fn · 165 loc · 5 in · 2 out</text>
+</g>
+<g><title>src/core/config.c, src/core/config.h</title>
+<rect class="box" x="710" y="562" width="178" height="60" rx="9"/>
+<rect class="f-core" x="710" y="562" width="4" height="60" rx="2"/>
+<text class="name" x="726" y="587">config</text>
+<text class="meta" x="726" y="605">13 fn · 209 loc · 5 in · 2 out</text>
+</g>
+<g><title>src/core/event.c, src/core/event.h</title>
+<rect class="box" x="710" y="782" width="178" height="60" rx="9"/>
+<rect class="f-core" x="710" y="782" width="4" height="60" rx="2"/>
+<text class="name" x="726" y="807">event</text>
+<text class="meta" x="726" y="825">10 fn · 187 loc · 3 in · 2 out</text>
+</g>
+<g><title>src/core/scheduler.c, src/core/scheduler.h</title>
+<rect class="box" x="710" y="452" width="178" height="60" rx="9"/>
+<rect class="f-core" x="710" y="452" width="4" height="60" rx="2"/>
+<text class="name" x="726" y="477">scheduler</text>
+<text class="meta" x="726" y="495">12 fn · 279 loc · 8 in · 2 out</text>
+</g>
+<g><title>src/core/task.c, src/core/task.h</title>
+<rect class="box" x="710" y="672" width="178" height="60" rx="9"/>
+<rect class="f-core" x="710" y="672" width="4" height="60" rx="2"/>
+<text class="name" x="726" y="697">task</text>
+<text class="meta" x="726" y="715">12 fn · 178 loc · 3 in · 2 out</text>
+</g>
+<g><title>src/ds/list.c, src/ds/list.h</title>
+<rect class="box" x="278" y="892" width="178" height="60" rx="9"/>
+<rect class="f-ds" x="278" y="892" width="4" height="60" rx="2"/>
+<text class="name" x="294" y="917">list</text>
+<text class="meta" x="294" y="935">14 fn · 222 loc · 2 in · 2 out</text>
+</g>
+<g><title>src/ds/map.c, src/ds/map.h</title>
+<rect class="box" x="379" y="672" width="178" height="60" rx="9"/>
+<rect class="f-ds" x="379" y="672" width="4" height="60" rx="2"/>
+<text class="name" x="395" y="697">map</text>
+<text class="meta" x="395" y="715">14 fn · 285 loc · 5 in · 2 out</text>
+</g>
+<g><title>src/ds/vec.c, src/ds/vec.h</title>
+<rect class="box" x="480" y="892" width="178" height="60" rx="9"/>
+<rect class="f-ds" x="480" y="892" width="4" height="60" rx="2"/>
+<text class="name" x="496" y="917">vec</text>
+<text class="meta" x="496" y="935">18 fn · 198 loc · 2 in · 7 out</text>
+</g>
+<g><title>src/util/log.c, src/util/log.h</title>
+<rect class="box" x="48" y="1112" width="178" height="60" rx="9"/>
+<rect class="f-util" x="48" y="1112" width="4" height="60" rx="2"/>
+<text class="name" x="64" y="1137">log</text>
+<text class="meta" x="64" y="1155">10 fn · 163 loc · 0 in · 13 out</text>
+</g>
+<g><title>src/util/mem.c, src/util/mem.h</title>
+<rect class="box" x="48" y="1002" width="178" height="60" rx="9"/>
+<rect class="f-util" x="48" y="1002" width="4" height="60" rx="2"/>
+<text class="name" x="64" y="1027">mem</text>
+<text class="meta" x="64" y="1045">8 fn · 121 loc · 1 in · 12 out</text>
+</g>
+<g><title>src/util/str.c, src/util/str.h</title>
+<rect class="box" x="48" y="782" width="178" height="60" rx="9"/>
+<rect class="f-util" x="48" y="782" width="4" height="60" rx="2"/>
+<text class="name" x="64" y="807">str</text>
+<text class="meta" x="64" y="825">18 fn · 276 loc · 3 in · 8 out</text>
+</g>
+<text class="sub" x="34" y="1200">"in" = modules this one includes, "out" = modules that include it · 1 cycle edge: app/commands ⇄ app/app</text>
+</svg>
