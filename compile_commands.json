@@ -1,63 +1,272 @@
 [
  {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "main.c", "-o", "main.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "main.c",
+   "-o",
+   "main.o"
+  ],
   "file": "main.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "print.c", "-o", "print.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "print.c",
+   "-o",
+   "print.o"
+  ],
   "file": "print.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "src/app/app.c", "-o", "src/app/app.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "src/app/app.c",
+   "-o",
+   "src/app/app.o"
+  ],
   "file": "src/app/app.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "src/app/commands.c", "-o", "src/app/commands.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "src/app/commands.c",
+   "-o",
+   "src/app/commands.o"
+  ],
   "file": "src/app/commands.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "src/app/report.c", "-o", "src/app/report.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "src/app/report.c",
+   "-o",
+   "src/app/report.o"
+  ],
   "file": "src/app/report.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "src/core/config.c", "-o", "src/core/config.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "src/core/config.c",
+   "-o",
+   "src/core/config.o"
+  ],
   "file": "src/core/config.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "src/core/event.c", "-o", "src/core/event.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "src/core/event.c",
+   "-o",
+   "src/core/event.o"
+  ],
   "file": "src/core/event.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "src/core/scheduler.c", "-o", "src/core/scheduler.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "src/core/scheduler.c",
+   "-o",
+   "src/core/scheduler.o"
+  ],
   "file": "src/core/scheduler.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "src/core/task.c", "-o", "src/core/task.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "src/core/task.c",
+   "-o",
+   "src/core/task.o"
+  ],
   "file": "src/core/task.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "src/ds/list.c", "-o", "src/ds/list.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "src/ds/list.c",
+   "-o",
+   "src/ds/list.o"
+  ],
   "file": "src/ds/list.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "src/ds/map.c", "-o", "src/ds/map.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "src/ds/map.c",
+   "-o",
+   "src/ds/map.o"
+  ],
   "file": "src/ds/map.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "src/ds/vec.c", "-o", "src/ds/vec.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "src/ds/vec.c",
+   "-o",
+   "src/ds/vec.o"
+  ],
   "file": "src/ds/vec.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "src/util/log.c", "-o", "src/util/log.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "src/util/log.c",
+   "-o",
+   "src/util/log.o"
+  ],
   "file": "src/util/log.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "src/util/mem.c", "-o", "src/util/mem.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "src/util/mem.c",
+   "-o",
+   "src/util/mem.o"
+  ],
   "file": "src/util/mem.c"
- }, {
+ },
+ {
   "directory": "/home/eransa/code/hello",
-  "arguments": ["gcc", "-Wall", "-Wextra", "-O2", "-Isrc", "-I.", "-c", "src/util/str.c", "-o", "src/util/str.o"],
+  "arguments": [
+   "gcc",
+   "-Wall",
+   "-Wextra",
+   "-O2",
+   "-Isrc",
+   "-I.",
+   "-MMD",
+   "-MP",
+   "-c",
+   "src/util/str.c",
+   "-o",
+   "src/util/str.o"
+  ],
   "file": "src/util/str.c"
  }
 ]
